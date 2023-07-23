@@ -1,9 +1,12 @@
 {
   "name": "odin-inventory-application",
   "version": "0.0.0",
+  "engines": {
+    "node": ">=18.15.0"},
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "devStart": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -11,6 +14,13 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "express-async-handler": "^1.2.0",
+    "express-validator": "^6.6.1",
+    "mongoose": "^7.3.2",
+    "luxon": "^3.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
