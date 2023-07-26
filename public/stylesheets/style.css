@@ -1,8 +1,56 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* padding: 50px; */
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  display: flex;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.container-fluid {
+  display: flex;
+  gap: 50px;
+}
+
+.sidebarBG {
+  background: rgb(49, 53, 59);
+  width: 50%;
+}
+
+.indexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inventoryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.titleInventory {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.card {
+  transition: 0.5s;
+}
+
+.card:hover {
+  z-index: 1;
+}
+.card:hover {
+  background: rgb(146, 177, 223);
+  color: white;
+  transition: 0.5s;
+  transform: scale(1.1);
 }

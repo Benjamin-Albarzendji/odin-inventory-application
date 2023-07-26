@@ -1,5 +1,22 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .indexContainer
+    .topIndex
+      h1= title
+      p Welcome to #{title}
+      p This is a simple inventory application. You can add items to your inventory, and view them on the inventory page.
+    
+      .titleInventory Items in your inventory:
+    .inventoryContainer
+      each item in items
+        .card(style="width: 18rem;")
+          .card-body
+            h5.card-title #{item.name}
+            h6.card-subtitle.mb-2.text-body-secondary #{item.category.name}
+            p.card-text #{item.description}
+            a.card-link(href=item.url) Check it out!
+          
+
+
+  
