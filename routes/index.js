@@ -8,10 +8,10 @@ const inventoryController = require('../controllers/inventoryController');
 router.get('/', inventoryController.index);
 
 // // GET request for creating a Inventory. NOTE This must come before routes that display Inventory (uses id).
-// router.get('/inventory/create', inventoryController.inventory_create_get);
+router.get('/inventory/create', inventoryController.inventory_create_get);
 
 // // POST request for creating item.
-// router.post('/inventory/create', inventoryController.inventory_create_post);
+router.post('/inventory/create', inventoryController.inventory_create_post);
 
 // // GET request to delete item.
 // router.get('/inventory/:id/delete', inventoryController.inventory_delete_get);

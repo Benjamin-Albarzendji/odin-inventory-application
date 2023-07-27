@@ -6,6 +6,7 @@ block content
       h1= title
       p Welcome to #{title}
       p This is a simple inventory application. You can add items to your inventory, and view them on the inventory page.
+      button.btn.btn-primary(type="button", onclick="location.href='/inventory/create'") Create Item
     
       .titleInventory Items in your inventory:
     .inventoryContainer
@@ -15,6 +16,8 @@ block content
             h5.card-title #{item.name}
             h6.card-subtitle.mb-2.text-body-secondary #{item.category.name}
             p.card-text #{item.description}
+            p.card-text #{item.price}$
+            p.card-text #{item.stock} in stock
             a.card-link(href=item.url) Check it out!
           
 
