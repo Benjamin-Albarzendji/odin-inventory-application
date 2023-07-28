@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    .categoryContainer
+        h1= title
+        .categories
+            each category in categories
+                .categoryCard
+                    p #{category.name}
+                    p #{category.description}        
+                    li
+                        a(href=category.url) View Items
+
+

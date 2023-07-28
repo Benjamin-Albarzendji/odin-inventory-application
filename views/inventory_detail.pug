@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    .detailContainer
+        h1= title
+        button.btn.btn-primary(type="button", onclick="location.href='/inventory'") Go Back
+        .card(style="width: 18rem;")
+            .card-body
+                h5.card-title #{item.name}
+                h6.card-subtitle.mb-2.text-body-secondary #{item.category.name}
+                p.card-text #{item.description}
+                p.card-text #{item.price}$
+                p.card-text #{item.stock} in stock
+                a.card-link(href=item.url+"/update") Update Item
+                a.card-link(href=item.url+"/delete") Delete Item
+                
+                

@@ -40,6 +40,7 @@ a {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+  gap: 5px;
 }
 .card {
   transition: 0.5s;
@@ -53,4 +54,55 @@ a {
   color: white;
   transition: 0.5s;
   transform: scale(1.1);
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+}
+
+.detailContainer button {
+  width: 20%;
+}
+
+.detailContainer > * {
+  margin: 0 auto;
+}
+
+.categoryContainer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.categories {
+  display: flex;
+  gap: 10px;
+}
+
+.categoryCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 15px;
+}
+
+.categoryItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.deleteContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }

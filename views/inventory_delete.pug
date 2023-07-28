@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+    .deleteContainer
+        h1= title
+        
+        //- Render form with item id with a hidden value and a submit button
+        form(method='POST' action='')
+            div.form-group
+            input#itemid.form-control(type='hidden',name='itemid', required='true', value=item._id )
+            button.btn.btn-primary(type='submit') Delete
+
+    
+                
